@@ -1,0 +1,8 @@
+{
+  "name": "Namu Coffee and Eatery",
+  "description": "Landing page resmi Namu Coffee and Eatery Jember. Temukan menu andalan, suasana tempat nugas & santai, ulasan Google Maps, jam operasional, dan rute lokasi di Jl. Karimata No. 26 Sumbersari.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
