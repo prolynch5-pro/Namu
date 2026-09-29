@@ -1,18 +1,23 @@
-export interface MenuItem {
+export type MenuCategoryType = 
+  | 'all'
+  | 'coffee'
+  | 'non-coffee'
+  | 'signature-americano'
+  | 'rice-bowl'
+  | 'meals-pasta'
+  | 'snacks';
+
+export interface OfficialMenuItem {
   id: string;
   name: string;
-  category: 'kopi' | 'non-kopi' | 'makanan' | 'camilan';
+  category: MenuCategoryType;
+  groupName: 'COFFEE' | 'NON COFFEE' | 'AMERICANO SERIES' | 'SIGNATURE' | 'RICE BOWL' | 'MEALS' | 'PASTA' | 'SNACKS';
   price: number;
-  description: string;
-  image: string;
-  isPopular?: boolean;
-  tags?: string[];
-}
-
-export interface CartItem {
-  menuItem: MenuItem;
-  quantity: number;
+  priceFormatted: string; // e.g. "20K"
+  servingTemp?: 'HOT / ICE' | 'ICE';
+  ingredients?: string;
   notes?: string;
+  badge?: string;
 }
 
 export interface ReviewItem {
